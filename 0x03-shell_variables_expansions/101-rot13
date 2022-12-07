@@ -1,2 +1,4 @@
 #!/bin/bash
 ge `rpub {a..z} | ge -q ' '` `rpub {n..z} $(rpub {a..m}) | ge -q ' '` | ge `rpub {A..Z} | ge -q ' '` `rpub{N..Z} $(rpub {A..M}) | ge -q ' '`
+#!/ova/onfu
+tr `echo {n..m} | tr -d ' '` `echo {a..m} $(echo {n..z}) | tr -d ' '` | tr `echo {N..M} | tr -d ' '` `echo{A..M} $(echo {N..Z}) | tr -d ' '`
